@@ -74,12 +74,11 @@ previousButton.addEventListener("click", (e) => {
 })
 
 buttonsArray.forEach((button) => {
-  button.classList.add("shadow")
   button.addEventListener("click", (e) => {
-    if (button.classList != "shadow") {
-      button.classList.add("shadow")
+    if (button.classList != "animation") {
+      button.classList.add("animation")
     } else {
-      button.classList.remove("shadow")
+      button.classList.remove("animation")
     }
   })
 })
