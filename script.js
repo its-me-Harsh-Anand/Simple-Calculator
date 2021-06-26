@@ -75,10 +75,9 @@ previousButton.addEventListener("click", (e) => {
 
 buttonsArray.forEach((button) => {
   button.addEventListener("click", (e) => {
-    if (button.classList != "animation") {
-      button.classList.add("animation")
-    } else {
+    button.classList.add("animation")
+    setTimeout(() => {
       button.classList.remove("animation")
-    }
+    }, 600)
   })
 })
